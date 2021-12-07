@@ -271,7 +271,7 @@ namespace GoodMatch
         }
         public static void WritetoFile(List<PercentageMatch> percentageMatch)
         {
-            string fpath = @"Output.csv";
+            string fpath = @"Output.txt";
             StringBuilder Output = new StringBuilder();
             try
             {
