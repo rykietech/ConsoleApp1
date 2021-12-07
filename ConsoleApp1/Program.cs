@@ -271,7 +271,7 @@ namespace GoodMatch
         }
         public static void WritetoFile(List<PercentageMatch> percentageMatch)
         {
-            string fpath = @"C:/Users/f/OneDrive/Desktop/Output.csv";
+            string fpath = @"Output.csv";
             StringBuilder Output = new StringBuilder();
             try
             {
@@ -342,7 +342,7 @@ namespace GoodMatch
                 Console.WriteLine("error: names are not valid");
             }
             // Using csv file
-            List<PercentageMatch> percentageMatch = GoodMatchTest.CSVGoodMatch(@"C:/Users/f/OneDrive/Desktop/Input.csv");
+            List<PercentageMatch> percentageMatch = GoodMatchTest.CSVGoodMatch(@"Input.csv");
             percentageMatch = Sort(percentageMatch);
             WritetoFile(percentageMatch);
             //foreach (var pm in percentageMatch)
